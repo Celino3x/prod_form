@@ -1,0 +1,61 @@
+@font-face {
+    font-family: Nunito;
+    src: url(../font/Nunito-Regular.ttf);
+}
+body{
+    font-family: Nunito;
+
+
+   
+}
+
+.container{
+    margin-top: 50px;
+}
+
+
+
+label{
+    color: #555;  
+}
+
+.labelhora{
+    margin-top: 20px;
+}
+
+.h5{
+    margin-top: 20%;
+}
+
+
+
+.btnback{
+    text-decoration: none;
+}
+
+.btnback:hover{
+    text-decoration: none;
+    color: #d1ad5a;
+}
+
+
+.rodape{
+    margin-top: 50px;
+    font-size: 8px;
+    color:#ccc;
+    text-align: center;
+}
+
+h6{
+    font-weight: bold;
+}
+
+.rowb{
+    border: #555 1px;
+    border-style: solid;
+}
+
+.rowb:hover{
+    
+    background-color: #ccc;
+}
