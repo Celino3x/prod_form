@@ -19,7 +19,7 @@
             <h2>Relatório gravação</h2>
         </center>
 
-        <form action="enviar-mail.php" method="POST">
+        <form action="mail_enviado.php" method="POST">
             <div class="mb-3">
                 <label for="" class="form-label">Nome</label>
                 <input type="text" name="nome" class="validate form-control" id="" placeholder="" required>
