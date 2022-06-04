@@ -428,14 +428,18 @@ $destino = "p.correia@hotmail.com, pedro.correia@lynxfilmes.com.br, cbrjtecnolog
 $assunto = "Relatório de Gravação de $nome $sobrenome | Casablanca";
 
 //Este sempre deverá existir para garantir a exibição correta dos caracteres
-$headers  = "X=Mailer:PHP/".phpversion();
-$headers .= "Content-type: text/html; charset=UTF-8" . "\r\n";
-$headers .= "From: $nome <$mail>";
+
+$header = "From:cbrjtecnologia@gmail.com"."\r\n".
+"Reply-To:".$mail."\r\n".
+"X=Mailer:PHP/ ".phpversion();
+//$headers  = "X=Mailer:PHP/".phpversion();
+//$headers .= "Content-type: text/html; charset=UTF-8" . "\r\n";
+//$headers .= "From: $nome <$mail>";
 /* Outra alternativa é adicionar através do header como cópia */
 /* $headers .= "\r\n" . 'Cc: segundo-email@provedor.com' . "\r\n"; */
 
 
-$messagemail = "Formulário enviado com Sucesso!";
+//$messagemail = "Formulário enviado com Sucesso!";
 
 //Enviar
 mail($destino, $assunto, $arquivo, $headers);
