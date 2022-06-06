@@ -1,7 +1,7 @@
 <?php
 
 // Using default PHP curl library
-$ch = curl_init('https://realemail.expeditedaddons.com/?api_key=P1LS6XIZD508J09H2UCO1EK3QGWBM42A9357F4T7N68VRY&email=email@example.org&fix_typos=false');
+$ch = curl_init('https://realemail.expeditedaddons.com/?api_key=P1LS6XIZD508J09H2UCO1EK3QGWBM42A9357F4T7N68VRY&email=cbrjtecnologia@gmail.com&fix_typos=false');
 
 $response = curl_exec($ch);
 curl_close($ch);
