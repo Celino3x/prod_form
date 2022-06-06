@@ -1,13 +1,5 @@
 <?php
 
-// Using default PHP curl library
-$ch = curl_init('https://realemail.expeditedaddons.com/?api_key=P1LS6XIZD508J09H2UCO1EK3QGWBM42A9357F4T7N68VRY&email=cbprodform@heroku.trustifi.com&fix_typos=false');
-
-$response = curl_exec($ch);
-curl_close($ch);
-
-var_dump($response);
-
 include ('cabecalho.php');
 
 //Variáveis
@@ -431,15 +423,18 @@ $arquivo = "
 </html>
 ";
 
+
+echo($arquivo);
+
 //Emails para quem será enviado o formulário
-$destino = "p.correia@hotmail.com, pedro.correia@lynxfilmes.com.br, cbrjtecnologia@gmail.com, octavio.santos@lynxfilmes.com.br, $mail";
-$assunto = "Relatório de Gravação de $nome $sobrenome | Casablanca";
+//$destino = "p.correia@hotmail.com, pedro.correia@lynxfilmes.com.br, cbrjtecnologia@gmail.com, octavio.santos@lynxfilmes.com.br, $mail";
+//$assunto = "Relatório de Gravação de $nome $sobrenome | Casablanca";
 
 //Este sempre deverá existir para garantir a exibição correta dos caracteres
 
-$header = "From:cbrjtecnologia@gmail.com"."\r\n".
-"Reply-To:".$mail."\r\n".
-"X=Mailer:PHP/ ".phpversion();
+//$header = "From:cbrjtecnologia@gmail.com"."\r\n".
+//"Reply-To:".$mail."\r\n".
+//"X=Mailer:PHP/ ".phpversion();
 //$headers  = "X=Mailer:PHP/".phpversion();
 //$headers .= "Content-type: text/html; charset=UTF-8" . "\r\n";
 //$headers .= "From: $nome <$mail>";
@@ -450,13 +445,13 @@ $header = "From:cbrjtecnologia@gmail.com"."\r\n".
 //$messagemail = "Formulário enviado com Sucesso!";
 
 //Enviar
-mail($destino, $assunto, $arquivo, $headers);
+//mail($destino, $assunto, $arquivo, $headers);
 
-if(mail($destino, $assunto, $arquivo, $headers)){
-    echo("Email enviado com Sucesso!");
-}else{
-    echo("Email Não pode ser enviado");
-}
+//if(mail($destino, $assunto, $arquivo, $headers)){
+  //  echo("Email enviado com Sucesso!");
+//}else{
+ //   echo("Email Não pode ser enviado");
+//}
 
 /*
 if(mail($destino, $assunto, $arquivo, $headers)){
