@@ -423,21 +423,15 @@ $arquivo = "
 </html>
 ";
 
-
-echo($arquivo);
-
 //Emails para quem será enviado o formulário
-//$destino = "p.correia@hotmail.com, pedro.correia@lynxfilmes.com.br, cbrjtecnologia@gmail.com, octavio.santos@lynxfilmes.com.br, $mail";
-//$assunto = "Relatório de Gravação de $nome $sobrenome | Casablanca";
+$destino = "p.correia@hotmail.com, pedro.correia@lynxfilmes.com.br, cbrjtecnologia@gmail.com, octavio.santos@lynxfilmes.com.br, $mail";
+//$destino = "fabiola26prod@gmail.com, ari@teleimage.com.br, fabiotavora@cbsp.com.br, mayra@cbsp.com.br, newtonambar@cbsp.com.br, cbrjtecnologia@gmail.com, renataprodcb@gmail.com, patriciaiglesias.cb@gmail.com, $mail";
+$assunto = "Relatório de Gravação de $nome $sobrenome | Casablanca";
 
 //Este sempre deverá existir para garantir a exibição correta dos caracteres
-
-//$header = "From:cbrjtecnologia@gmail.com"."\r\n".
-//"Reply-To:".$mail."\r\n".
-//"X=Mailer:PHP/ ".phpversion();
-//$headers  = "X=Mailer:PHP/".phpversion();
-//$headers .= "Content-type: text/html; charset=UTF-8" . "\r\n";
-//$headers .= "From: $nome <$mail>";
+$headers  = "MIME-Version: 1.0\n";
+$headers .= "Content-type: text/html; charset=UTF-8" . "\r\n";
+$headers .= "From: $nome <$mail>";
 /* Outra alternativa é adicionar através do header como cópia */
 /* $headers .= "\r\n" . 'Cc: segundo-email@provedor.com' . "\r\n"; */
 
@@ -445,23 +439,17 @@ echo($arquivo);
 //$messagemail = "Formulário enviado com Sucesso!";
 
 //Enviar
-//mail($destino, $assunto, $arquivo, $headers);
+mail($destino, $assunto, $arquivo, $headers);
 
-//if(mail($destino, $assunto, $arquivo, $headers)){
-  //  echo("Email enviado com Sucesso!");
-//}else{
- //   echo("Email Não pode ser enviado");
-//}
+//echo "<meta http-equiv='refresh' content='10;URL=../contato.html'>";
 
 /*
 if(mail($destino, $assunto, $arquivo, $headers)){
   echo "<script type='text/javascript'>alert('$messagemail');</script>";
- header('Location: email_enviado.php');
   
 }else{
   echo "<script type='text/javascript'>alert('teste');</script>";
   echo "<center><h2>Falha ao enviar formulário!</h2><center>";
-  header('Location: index.php');
 }
 
 */
