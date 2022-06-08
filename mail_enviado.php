@@ -439,7 +439,13 @@ $headers .= "From: $nome <$mail>";
 //$messagemail = "Formulário enviado com Sucesso!";
 
 //Enviar
-mail($destino, $assunto, $arquivo, $headers);
+$email = mail($destino, $assunto, $arquivo, $headers);
+
+if($email == true){
+  header('Location: sucesso.html');
+} else{
+  header('Location: erro.php');
+}
 
 //echo "<meta http-equiv='refresh' content='10;URL=../contato.html'>";
 

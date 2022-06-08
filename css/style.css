@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,800&display=swap');
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css");
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
 
 body{
     font-family: 'Red Hat Display', sans-serif;
@@ -21,5 +22,64 @@ h3{
 }
 
 input::placeholder{
+    color: #c79d33;
+}
+
+/* Sucesso */
+.background{
+    position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background:  linear-gradient(transparent, rgba(0, 0, 0, .5)), url("/img/desk.jpg");
+	background-size: cover;
+	background-position: center;   
+}
+
+h1{
+    font-family: 'Quicksand', sans-serif;
+}
+
+.icon{
+    width: 40px;
+    height: 40px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+.modalbox{
+    margin-top: 40px;
+    background: #FFF;
+    text-align: center;
+    font-family: 'Red Hat Display', sans-serif;
+    width: 400px;
+    height: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+}
+
+.redo{
+    background-color: #c79d33;
+    color: #FFF;
+    margin-top: 20px;
+}
+
+.red, a{
+    text-decoration: none;
+    color: #FFF;
+}
+
+.red, a:hover{
+    text-decoration: none;
+    color: #c79d33;
+}
+
+.redo:hover{
+    background-color: #FFF;
     color: #c79d33;
 }
