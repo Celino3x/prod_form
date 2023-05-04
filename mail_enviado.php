@@ -424,8 +424,8 @@ $arquivo = "
 ";
 
 //Emails para quem será enviado o formulário
-$destino = "p.correia@hotmail.com, pedro.correia@lynxfilmes.com.br, cbrjtecnologia@gmail.com, octavio.santos@lynxfilmes.com.br, $mail";
-//$destino = "fabiola26prod@gmail.com, ari@teleimage.com.br, fabiotavora@cbsp.com.br, mayra@cbsp.com.br, newtonambar@cbsp.com.br, cbrjtecnologia@gmail.com, renataprodcb@gmail.com, patriciaiglesias.cb@gmail.com, $mail";
+//$destino = "p.correia@hotmail.com, pedro.correia@lynxfilmes.com.br, cbrjtecnologia@gmail.com, octavio.santos@lynxfilmes.com.br, $mail";
+$destino = "fabiola26prod@gmail.com, ari@teleimage.com.br, mayra@cbsp.com.br, newtonambar@cbsp.com.br, cbrjtecnologia@gmail.com, patriciaiglesias.cb@gmail.com, rocerqueiraprod@gmail.com, wladssou@gmail.com,$mail";
 $assunto = "Relatório de Gravação de $nome $sobrenome | Casablanca";
 
 //Este sempre deverá existir para garantir a exibição correta dos caracteres
@@ -444,7 +444,7 @@ $email = mail($destino, $assunto, $arquivo, $headers);
 if($email == true){
   header('Location: sucesso.html');
 } else{
-  header('Location: erro.php');
+  header('Location: erro.html');
 }
 
 //echo "<meta http-equiv='refresh' content='10;URL=../contato.html'>";
