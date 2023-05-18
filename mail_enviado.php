@@ -101,7 +101,7 @@ $arquivo = "
 
 
  
-<center><img src='http://cbrj.ddns.net/form-prod/img/logo.png' alt='Logo Casablanca'></center>
+<center><img src='https://scontent.fbhz1-1.fna.fbcdn.net/v/t39.30808-6/305293908_511314637664113_2932591517470509138_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=hPSDREss3X0AX-wyuf8&_nc_ht=scontent.fbhz1-1.fna&oh=00_AfBUge8ZTPwvZV_y7qiKLKTjd36PzwyxKEFpCYf8y8hSjQ&oe=6460D119' alt='Logo Casablanca'></center>
 <center><h2>Relatório de Gravação | Casablanca</h2></center>
 <p><b>Nome: </b>$nome</p>
 <p><b>E-mail: </b>$mail</p>
@@ -425,7 +425,7 @@ $arquivo = "
 
 //Emails para quem será enviado o formulário
 //$destino = "p.correia@hotmail.com, pedro.correia@lynxfilmes.com.br, cbrjtecnologia@gmail.com, octavio.santos@lynxfilmes.com.br, $mail";
-$destino = "fabiola26prod@gmail.com, ari@teleimage.com.br, mayra@cbsp.com.br, newtonambar@cbsp.com.br, cbrjtecnologia@gmail.com, patriciaiglesias.cb@gmail.com, rocerqueiraprod@gmail.com, wladssou@gmail.com,$mail";
+$destino = "fabiola26prod@gmail.com, ari@teleimage.com.br, mayra@cbsp.com.br, newtonambar@cbsp.com.br, cbrjtecnologia@gmail.com, patriciaiglesias.cb@gmail.com, rocerqueiraprod@gmail.com, matheusnascimento.producao@gmail.com, suzanaazevedo.cb@gmail.com, $mail";
 $assunto = "Relatório de Gravação de $nome $sobrenome | Casablanca";
 
 //Este sempre deverá existir para garantir a exibição correta dos caracteres
